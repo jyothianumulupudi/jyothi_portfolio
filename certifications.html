@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certifications - Jyothi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cert-page-wrapper"
+     style="background-image: url('images/background.jpg');">
+
+<div class="cert-content-box">
+
+    <h1 class="cert-title">CERTIFICATIONS</h1>
+    <div class="cert-divider"></div>
+
+    <div class="cert-grid">
+
+        <!-- Certification Cards -->
+        <div class="cert-card">
+            <img src="certifications/cer0.jpg" onclick="openCert(this.src)">
+            <p>Diploma in AI</p>
+        </div>
+        <div class="cert-card">
+            <img src="certifications/AI.jpg" onclick="openCert(this.src)">
+            <p>Artificial Intelligence & Deep Learning</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert1.jpg" onclick="openCert(this.src)">
+            <p>SQL</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert2.jpg" onclick="openCert(this.src)">
+            <p>Power BI</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert3.jpg" onclick="openCert(this.src)">
+            <p>SQL</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert4.jpg" onclick="openCert(this.src)">
+            <p>Python</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert5.jpg" onclick="openCert(this.src)">
+            <p>Hacker Rank</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert6.jpg" onclick="openCert(this.src)">
+            <p>Appreciation</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert7.jpg" onclick="openCert(this.src)">
+            <p>Excel</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert8.jpg" onclick="openCert(this.src)">
+            <p>Power BI</p>
+        </div>
+
+        <div class="cert-card">
+            <img src="certifications/cert9.jpg" onclick="openCert(this.src)">
+            <p>Testdome</p>
+        </div>
+
+    </div>
+
+    <a class="cert-back-btn" href="index.html">⬅ Back to Home</a>
+
+</div>
+</div>
+
+<!-- Popup Viewer -->
+<div id="certPopup" class="cert-popup" onclick="closeCert()">
+    <span class="cert-close">&times;</span>
+    <img id="certPopupImg">
+</div>
+
+<script>
+function openCert(src) {
+    document.getElementById("certPopup").style.display = "flex";
+    document.getElementById("certPopupImg").src = src;
+}
+
+function closeCert() {
+    document.getElementById("certPopup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
